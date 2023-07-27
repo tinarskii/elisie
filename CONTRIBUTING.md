@@ -12,13 +12,13 @@ The Elysia.js repo is using [bun](https://bun.sh). Make sure you have the [lates
 
 1. Clone this repository
 
-2. In the root of this project, run `bun install` to install all of the necessary dependencies
+2. In the root of this project, run `bun install` to install all the necessary dependencies
 
-3. To run the development verision, run `bun run dev`
+3. To run the development version, run `bun run dev`
 
 ### Unit Testing
 
-In Elysia.js, all of the test files are located inside the [`test/`](test/) directory. Unit testing are powered by [bun's wiptest](https://github.com/oven-sh/bun/tree/main/packages/bun-test).
+In Elysia.js, all the test files are located inside the [`test/`](test/) directory. Unit testing are powered by [bun's wiptest](https://github.com/oven-sh/bun/tree/main/packages/bun-test).
 
 -   `bun test` to run all the test inside the [`test/`](test/) directory
 

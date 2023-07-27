@@ -28,7 +28,7 @@ const findAliases = new RegExp(` (\\w+) = context`, 'g')
 export const hasReturn = (fnLiteral: string) => {
 	const parenthesisEnd = fnLiteral.indexOf(')')
 
-	// Is direct arrow function return eg. () => 1
+	// Is direct arrow function return e.g. () => 1
 	if (
 		fnLiteral.charCodeAt(parenthesisEnd + 2) === 61 &&
 		fnLiteral.charCodeAt(parenthesisEnd + 5) !== 123
@@ -339,7 +339,7 @@ export const composeHandler = ({
 								else c.body[key] = value
 							}`
 						else {
-							// Since it's an object an not accepting file
+							// Since it's an object and not accepting file
 							// we can infer that it's JSON
 							fnLiteral += `c.body = JSON.parse(await c.request.text())`
 						}

@@ -3,7 +3,7 @@ import { Elysia } from '../src'
 /**
  * Example of handle single static file
  *
- * For more advavnce use-case, eg. folder
+ * For more advance use-case, e.g. folder
  * @see https://github.com/elysiajs/elysia-static
  */
 new Elysia()

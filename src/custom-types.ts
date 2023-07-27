@@ -167,7 +167,7 @@ declare module '@sinclair/typebox' {
 /**
  * A Numeric string
  *
- * Will be parse to Number
+ * Will be parsed to Number
  */
 Type.Numeric = (properties) => {
 	return Type.Number({

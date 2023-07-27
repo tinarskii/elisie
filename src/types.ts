@@ -638,7 +638,7 @@ type MergeTwoObjects<
 	T1 = { [K in keyof T0]: T0[K] }
 > = T1
 
-// it merge 2 static types and try to avoid of unnecessary options (`'`)
+// it merges 2 static types and try to avoid of unnecessary options (`'`)
 export type DeepMergeTwoTypes<T, U> =
 	// ----- 2 added lines ------
 	[T, U] extends [any[], any[]]
@@ -654,12 +654,12 @@ export type DeepMergeTwoTypes<T, U> =
 export type IsAny<T> = 0 extends 1 & T ? true : false
 
 /**
- * Returns a boolean for whether the the type is `never`.
+ * Returns a boolean for whether the type is `never`.
  */
 export type IsNever<T> = [T] extends [never] ? true : false
 
 /**
- * Returns a boolean for whether the the type is `unknown`.
+ * Returns a boolean for whether the type is `unknown`.
  */
 export type IsUnknown<T> = IsAny<T> extends true
 	? false

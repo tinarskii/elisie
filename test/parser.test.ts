@@ -56,7 +56,7 @@ describe('Parser', () => {
 			.onParse((context, contentType) => {
 				switch (contentType) {
 					case 'text/plain':
-						return 'Overwrited'
+						return 'Overwrote'
 				}
 			})
 			.post('/', ({ body }) => body)
@@ -72,7 +72,7 @@ describe('Parser', () => {
 			})
 		)
 
-		expect(await res.text()).toBe('Overwrited')
+		expect(await res.text()).toBe('Overwrote')
 	})
 
 	it('parse x-www-form-urlencoded', async () => {

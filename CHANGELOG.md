@@ -61,7 +61,7 @@ Bug fix:
 
 # 0.5.11 - 31 May 2023
 Improvement:
-- Experimental basic support for Static Code Analysis in Nodejs
+- Experimental basic support for Static Code Analysis in Node.js
 
 # 0.5.10 - 31 May 2023
 Bug fix:
@@ -246,7 +246,7 @@ Fix:
 # 0.4.4 - 6 Apr 2023
 Improvement:
 - using `isNotEmpty` for `mapResponse`
-- pre check if `set.headers['Set-Cookie']` is array before converting to headers
+- pre-check if `set.headers['Set-Cookie']` is array before converting to headers
 - using `mapPathnameAndQueryRegEx.exec(request.url)` instead of `request.url.match(mapPathnameAndQueryRegEx)`
 
 # 0.4.3 - 31 Mar 2023
@@ -282,7 +282,7 @@ Breaking Change:
 
 # 0.3.2 - 26 Mar 2023
 Fix:
-- child to inhertis WebSocket plugin (https://github.com/elysiajs/elysia/issues/27)
+- child to inherits WebSocket plugin (https://github.com/elysiajs/elysia/issues/27)
 - multiple status response does not work with the group (https://github.com/elysiajs/elysia/issues/28)
 
 # 0.3.1 - 17 Mar 2023
@@ -292,7 +292,7 @@ Fix:
 # 0.3.0 - 17 Mar 2023
 Feature:
 - Elysia Fn
-- Suport `multipart/form-data`
+- Support `multipart/form-data`
 - `t.File` and `t.Files` for file validation
 - `schema.content` for specifying content type
 
@@ -305,7 +305,7 @@ Improvement:
 - Reduce complex instruction for most Elysia types
 - Change store type to `unknown`
 - Compile `ElysiaRoute` type to literal
-- Optimize type compliation, type inference and auto-completion
+- Optimize type compilation, type inference and auto-completion
 - Improve type compilation speed
 - Improve TypeScript inference between plugin registration
 - Optimize TypeScript inference size
@@ -338,7 +338,7 @@ Fix:
 
 Breaking Change:
 - Rename `inject` to `derive`
-- Depreacate `ElysiaRoute`, changed to inline
+- Deprecate `ElysiaRoute`, changed to inline
 - Remove `derive`
 - Update from OpenAPI 2.x to OpenAPI 3.0.3
 - Move context.store[SYMBOL] to meta[SYMBOL]
@@ -409,7 +409,7 @@ Fix:
 # 0.3.0-beta.2 - 27 Feb 2023
 Improvement:
 - Compile `ElysiaRoute` type to literal
-- Optimize type compliation, type inference and auto-completion
+- Optimize type compilation, type inference and auto-completion
 - Improve type compilation speed by ~3x
 
 Fix:
@@ -425,7 +425,7 @@ Fix:
 # 0.3.0-beta.0 - 25 Feb 2023
 Feature:
 - Elysia Fn
-- Suport `multipart/form-data`
+- Support `multipart/form-data`
 - `t.File` and `t.Files` for file validation
 - `schema.content` for specifying content type
 
@@ -558,7 +558,7 @@ A 600 bytes client for Elysia server, no code generation need, creating a fully 
 See Eden in action [on Twitter](https://twitter.com/saltyAom/status/1602362204799438848?s=20&t=yqyxaNx_W0MNK9u3wnaK3g)
 
 ## The fastest
-With a lot effort put into micro-optimization and re-architecture, Elysia is the fastest Bun web framework benchmarked on 24 December 2022, outperformed 2/3 category put into test.
+With a lot of effort put into micro-optimization and re-architecture, Elysia is the fastest Bun web framework benchmarked on 24 December 2022, outperformed 2/3 category put into test.
 
 See benchmark results at [Bun http benchmark](https://github.com/SaltyAom/bun-http-framework-benchmark)
 
@@ -653,7 +653,7 @@ Fix:
 # 0.1.0.rc.3 - 12 Dec 2022
 Feature:
 - Strict type for `SCHEMA`
-- Infered type parameters for `SCHEMA`
+- Inferred type parameters for `SCHEMA`
 
 Fix:
 - Auto prefix path with `/` for non
@@ -698,7 +698,7 @@ Bug fix:
 
 # 0.0.0-experimental.52 - 23 Nov 2022
 Improvement:
-- Decorators is now lazily allocate
+- Decorators are now lazily allocate
 - `.serve` now accept numberic string as port for convenient with `process.env`
 
 # 0.0.0-experimental.51 - 22 Nov 2022 
@@ -716,10 +716,10 @@ new KingWorld().use(plugin, {
 However, this has flaw by the design because:
 - No support for async plugin
 - No generic for type inference
-- Not possible to accept 3...n parameters (if need)
+- Not possible to accept 3...n parameters (if needed)
 - Hard/heavy work to get type inference
 
-To fix all of the problem above, KingWorld now accept only one parameter.
+To fix all the problem above, KingWorld now accept only one parameter.
 
 A callback which return KingWorld Instance, but accept anything before that.
 ```typescript
@@ -772,7 +772,7 @@ Bug fix:
 # 0.0.0-experimental.48 - 18 Nov 2022 
 Bug fix:
 - Import Context as non-default
-- TypeScript's type not infering Context
+- TypeScript's type not inferring Context
 
 # 0.0.0-experimental.47 - 18 Nov 2022 
 Bug fix:
@@ -1047,7 +1047,7 @@ Change:
 
 # 0.0.0-experimental.23 - 21 Aug 2022
 New Feature:
-- Initialial config is now available, starting with `bodyLimit` config for limiting body size
+- Initial config is now available, starting with `bodyLimit` config for limiting body size
 
 Breaking Change:
 - `ctx.body` is now a literal value instead of `Promise`
