@@ -97,7 +97,7 @@ export const getSchemaValidator = (
 	const schema: TSchema = typeof s === 'string' ? models[s] : s
 
 	// @ts-ignore
-	if (schema.type === 'object' && 'additionalProperties' in schema === false)
+	if (schema.type === 'object' && !('additionalProperties' in schema))
 		schema.additionalProperties = additionalProperties
 
 	return TypeCompiler.Compile(schema)
@@ -127,7 +127,7 @@ export const getResponseSchemaValidator = (
 			if (maybeNameOrSchema in models) {
 				const schema = models[maybeNameOrSchema]
 				schema.type === 'object' &&
-					'additionalProperties' in schema === false
+					!('additionalProperties' in schema)
 
 				// Inherits model maybe already compiled
 				record[+status] =
@@ -139,7 +139,7 @@ export const getResponseSchemaValidator = (
 
 		if (
 			maybeNameOrSchema.type === 'object' &&
-			'additionalProperties' in maybeNameOrSchema === false
+			!('additionalProperties' in maybeNameOrSchema)
 		)
 			maybeNameOrSchema.additionalProperties = additionalProperties
 

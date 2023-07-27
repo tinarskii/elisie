@@ -183,7 +183,7 @@ export const ws =
 									(ws.data as ElysiaWSContext['data'])
 										.message as any,
 									message
-								).cause as string
+								).message as string
 							)
 
 						route.message(new ElysiaWS(ws as any), message)
